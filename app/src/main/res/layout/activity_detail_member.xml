@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetailMemberActivity">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="fill"
+                    >
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        tools:src="@drawable/saito_asuka"
+                        android:backgroundTintMode="add"
+                        android:tintMode="multiply"
+                        app:tint="#1E1E1E"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:padding="16dp">
+                    <ImageView
+                            android:id="@+id/imgMemberDetail"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            tools:src="@drawable/saito_asuka"
+                            android:adjustViewBounds="true"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"/>
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/imgMemberDetail"
+                            app:layout_constraintStart_toEndOf="@id/imgMemberDetail"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:orientation="vertical">
+                        <TextView
+                                android:id="@+id/txtNamaMemberDetail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="Asuka Saito"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:layout_marginBottom="10dp"
+                                />
+                        <TextView
+                                android:id="@+id/txtSecondMemberDetail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="Nogizaka46 - 1st Generation"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:layout_marginBottom="4dp"
+                                />
+                        <TextView
+                                android:id="@+id/txtGraduatedMemberDetail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="Graduated"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </FrameLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+                <TextView
+                        android:id="@+id/txtDescMemberDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="4sp"
+                        tools:text="Saito Asuka was a member of Nogizaka46's 1st Generation. She is a sweet regular model and former CUTiE exclusive model. She is a former child actress. She appeared in commercials for brands such as Takara Tomy and Yakult, and was also in the film Sakuran by Mika Ninagawa. Though she is not the center for Nogizaka46’s 29th Single Actually..., a music video promoting her and Yamashita Mizuki in a Double Center position was released after Nakanishi Aruno's scandal and suspension. By January 2023, had completed all activities with Nogizaka46 except for her graduation concert. On May 17th and 18th of the same year, her graduation concert was held at Tokyo Dome."/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/baseline_share_24"
+            android:contentDescription="Share Button"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
