@@ -76,6 +76,13 @@ class DataMembers {
                 R.drawable.endo_sakura,
                 "Kamimura Hinano is a member of Hinatazaka46's 3rd Generation. She knew of AKB48 since childhood, but fell in love with Nogizaka46 after seeing a music show performance of Nandome no Aozora ka? Her favorite member was Nishino Nanase. She was inspired to audition for the Sakamichi Series after attending handshake events and collecting merchandise, particularly a Nogizaka46 Live DVD where one member described the view of the fans' penlights from stage as \"beautiful, like being in the sky\". She did dance in elementary school from 2nd to 6th grade. Her first appearance as a Hiragana Keyakizaka46 member was at the final day of Hiragana Christmas 2018. She performed Yakusoku no Tamago with fellow members during the Encore.",
             ),
+            MemberSaka(
+                "Morita Hikaru",
+                2,
+                Group.SAKURAZAKA46,
+                R.drawable.morita_hikaru,
+                "Morita Hikaru is a member of Sakurazaka46's 2nd Generation. She decided to audition after seeing former Nogizaka46 member Fukagawa Mai on the TV Program \"Fukuoka Renai Hakusho\". Her fellow 2nd Generation members have said she is the most sadistic member of the generation, as she has a streak of laughing at others' misfortune, though she does deny it. She is talented at drawing. She has completed drawing requests from fans on the Mobile Mail App.",
+            ),
         )
     }
 }
