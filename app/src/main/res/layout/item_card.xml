@@ -17,7 +17,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                android:src="@drawable/ic_launcher_background"
+                tools:src="@drawable/ic_launcher_background"
                 android:scaleType="centerCrop"/>
         <LinearLayout
                 android:layout_width="0dp"
@@ -28,21 +28,24 @@
                 android:orientation="vertical"
                 android:padding="16dp">
             <TextView
+                    android:id="@+id/txtNamaMember"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="sdfsdfsdfsdf"
+                    tools:text="sdfsdfsdfsdf"
                     android:textAppearance="?attr/textAppearanceHeadline4"/>
             <TextView
+                    android:id="@+id/txtSecondMember"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="sdfsdfsdfsdf"
+                    tools:text="sdfsdfsdfsdf"
                     android:layout_marginTop="8dp"
                     android:textAppearance="?attr/textAppearanceBody1"
                     android:textColor="?android:attr/textColorSecondary"/>
             <TextView
+                    android:id="@+id/txtDescMember"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sakura Endō (遠藤 さくら, Endō Sakura, lahir 3 Oktober 2001) adalah seorang model, aktris dan idola Jepang. Ia adalah anggota Nogizaka46 dan model eksklusif untuk majalah non-no. Ia memainkan peran-peran pendukung dalam drama-drama televisi Mob Psycho 100 dan Zambi."
+                    tools:text="Sakura Endō (遠藤 さくら, Endō Sakura, lahir 3 Oktober 2001) adalah seorang model, aktris dan idola Jepang. Ia adalah anggota Nogizaka46 dan model eksklusif untuk majalah non-no. Ia memainkan peran-peran pendukung dalam drama-drama televisi Mob Psycho 100 dan Zambi."
                     android:layout_marginTop="16dp"
                     android:ellipsize="end"
                     android:maxLines="10"
