@@ -1,5 +1,9 @@
 package com.rijal.membersakamichi
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
 data class MemberSaka(
     val name: String,
     val generation: Int,
@@ -7,7 +11,7 @@ data class MemberSaka(
     val image: Int,
     val desc: String,
     val isGraduated: Boolean = false,
-) {
+) : Parcelable {
     fun getGeneration(): String {
         return when(generation) {
             1 -> "1st Generation"
