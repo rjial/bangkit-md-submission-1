@@ -4,7 +4,9 @@ data class MemberSaka(
     val name: String,
     val generation: Int,
     val group: Group,
-    val isGraduated: Boolean = false
+    val isGraduated: Boolean = false,
+    val image: Int,
+    val desc: String
 ) {
     fun getGeneration(): String {
         return when(generation) {
