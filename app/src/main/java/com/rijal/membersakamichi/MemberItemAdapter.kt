@@ -1,5 +1,6 @@
 package com.rijal.membersakamichi
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -25,5 +26,10 @@ class MemberItemAdapter(val listMember: ArrayList<MemberSaka>): RecyclerView.Ada
         binding.txtSecondMember.text = "${member.getGroup()} - ${member.getGeneration()}"
         binding.txtNamaMember.text = member.name
         binding.txtDescMember.text = member.desc
+        binding.root.setOnClickListener {
+            val detailIntent = Intent(it.context, DetailMemberActivity::class.java)
+            detailIntent.putExtra(DetailMemberActivity.INTENT_EXTRA, member)
+            it.context.startActivity(detailIntent)
+        }
     }
 }
